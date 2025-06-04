@@ -18,7 +18,7 @@
         height: 2rem;
         position: fixed;
         z-index: 1;
-        border: 2px solid #aad751;
+        border: 1px solid #aad751;
     }
 
     .block2 {
@@ -27,7 +27,7 @@
         height: 2rem;
         position: fixed;
         z-index: 1;
-        border: 2px solid #a2d149;
+        border: 1px solid #a2d149;
     }
 }
 
