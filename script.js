@@ -378,6 +378,13 @@ function gameLoop() {
         snake_reset();
         bg_reset();
     }
+    if (snake_score >= 50) {
+        restart();
+        window.alert(`You win , your scores is ${snake_score}.`);
+        window.alert(`Press [space] to restart the game.`);
+        snake_reset();
+        bg_reset();
+    }
 }
 
 // 資料重置
@@ -391,7 +398,9 @@ function restart() {
     snake_step = 3;
     speed = 0.2
     running = false;
+    snake_score = 0;
     window.clearInterval(loop);
+    
 }
 
 // 遊戲開始
